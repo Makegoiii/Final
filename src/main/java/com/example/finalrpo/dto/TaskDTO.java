@@ -1,0 +1,17 @@
+package com.example.finalrpo.dto;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class TaskDTO {
+    private Long id;
+    private String name;
+    private String status;
+    private UserDTO user;
+    private List<ProjectDTO> projects;
+}
