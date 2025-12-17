@@ -18,7 +18,7 @@ public class Task {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private com.example.rpo.model.User user;
+    private User user;
 
     @ManyToMany
     @JoinTable(
